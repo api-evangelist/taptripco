@@ -1,7 +1,29 @@
 aid: taptripco
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/taptripco.png
 name: taptrip.co
-description: taptrip.co is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  TapTrip (taptrip.co) was a UK-based self-serve business travel and expense
+  booking platform for SMEs, founded in 2018 in Manchester and part of the
+  Barclays Accelerator powered by Techstars. It let smaller businesses book and
+  manage flights, hotels, rail, and ground transportation without a travel
+  management company. TapTrip was acquired by TripStax in July 2022 and folded
+  into the TripStax platform as an SME online-booking module for travel
+  management companies; the standalone brand was absorbed. As of this
+  enrichment pass the taptrip.co domain no longer hosts an active product — it
+  resolves to a ParkingCrew domain-parking service and the TLS endpoint does not
+  respond. No public API, developer portal, documentation, SDKs, or
+  /.well-known discovery surface was found for the standalone company.
 url: https://raw.githubusercontent.com/api-evangelist/taptripco/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +31,22 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: tripstax
+x-acquired-date: '2022-07'
+x-domain-status: parked
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Travel
+- Business Travel
+- Travel Management
+- Booking
+- Expense Management
+- SME
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +56,8 @@ maintainers:
 common:
 - type: Website
   url: https://taptrip.co/
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
